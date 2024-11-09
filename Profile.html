@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Kumar Ramavath's Tech Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #1a1a2e;
+            --card-bg-color: rgba(255, 255, 255, 0.1);
+            --text-color: #ffffff;
+            --text-secondary: #a0aec0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg-color);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 0.5rem;
+        }
+
+        .skills, .languages, .certifications, .experience, .education {
+            margin-bottom: 2rem;
+        }
+
+        .skill-bar {
+            background-color: var(--secondary-color);
+            height: 10px;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            background-color: var(--primary-color);
+            height: 100%;
+            transition: width 1s ease-in-out;
+        }
+
+        .languages ul, .certifications ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .languages li, .certifications li {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            margin: 0.2rem;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item h3, .education-item h3 {
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item p, .education-item p {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anil Kumar Ramavath</h1>
+        
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:anilkumarramavath85@gmail.com">anilkumarramavath85@gmail.com</a>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hyderabad, Telangana, India</span>
+            </div>
+            <div>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/anil-kumar-ramavath-bb0128239" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>Experienced IT professional specializing in Microsoft technologies including Azure Active Directory, M365, O365, and User Administration. Proficient in ITIL practices, Cloud concepts, and Azure architecture. Known for problem-solving skills and applying innovative solutions to improve efficiency.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div>
+                <p>Cloud concepts</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+            </div>
+            <div>
+                <p>Azure architecture and services</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+            </div>
+            <div>
+                <p>Azure management and governance</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+            </div>
+        </section>
+
+        <section class="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>English (Professional Working)</li>
+                <li>Hindi (Limited Working)</li>
+                <li>Telugu (Professional Working)</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Certified: Azure Fundamentals</li>
+                <li>Docker Training Course</li>
+                <li>Kubernetes - Beginners - Hands-on Tutorial</li>
+                <li>Jenkins</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>NTT IOC Analyst</h3>
+                <p>April 2022 - Present (2 years 8 months)</p>
+                <p>Responsibilities include Azure Active Directory, Microsoft Entra ID, M365, O365, User Administration, Exchange, VM, ITIL.</p>
+            </div>
+            <div class="experience-item">
+                <h3>NTT Ltd. IOC Analyst</h3>
+                <p>April 2022 - Present (2 years 8 months)</p>
+                <p>Location: Hyderabad, Telangana, India.</p>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Institute of Aeronautical Engineering</h3>
+                <p>Bachelor of Technology - BTech, Electrical and Electronics Engineering</p>
+                <p>June 2019 - May 2021</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
